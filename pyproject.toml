@@ -8,7 +8,7 @@ packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-fastapi = "^0.116.1"
+fastapi = "^0.118.0"
 sqlmodel = "^0.0.24"
 asyncpg = "^0.30.0"
 psycopg2 = "^2.9.6"
