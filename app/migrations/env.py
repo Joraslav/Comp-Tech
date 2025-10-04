@@ -9,6 +9,12 @@ from sqlmodel import SQLModel  # noqa
 
 from app import settings
 
+from app.database.models.advert import Advert # noqa
+from app.database.models.booking import Booking # noqa
+from app.database.models.user import User   # noqa
+from app.database.models.order import Order # noqa
+from app.database.models.city import City   # noqa
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
