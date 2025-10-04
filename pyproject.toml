@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fastapi-template"
+version = "0.1.0"
+description = "FastAPI production template"
+authors = ["kartaris <rh@getflow.tech>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.116.1"
+sqlmodel = "^0.0.24"
+asyncpg = "^0.30.0"
+psycopg2 = "^2.9.6"
+httpx = "^0.28.1"
+alembic = "^1.16.5"
+sentry-sdk = {extras = ["fastapi"], version = "^2.37.0"}
+gunicorn = "^23.0.0"
+uvicorn = {extras = ["standard"], version = "^0.35.0"}
+prometheus-fastapi-instrumentator = "^7.1.0"
+pyctuator = "^1.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
